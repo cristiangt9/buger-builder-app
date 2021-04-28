@@ -1,6 +1,6 @@
-# Burger Builder App
+# Burger Builder App 🍔🍔🍔
 
-This project was developet with react and typescript, and is designed to help the consumer have a pleasant experience while placing an order at their Burger restaurant.
+This project was developet with react and typescript, and is designed to help the consumer have a pleasant experience while placing an order at their Burger restaurant. 
 
 ## Available Scripts
 
