@@ -1,9 +1,23 @@
+import { Redirect, Route, Switch } from "react-router-dom";
+import Layout from "./components/Layout";
+import Builder from "./pages/Builder";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Layout>
+      <Switch>
+        <Route path="/" exact>
+          <Builder />
+        </Route>
+        <Route path="/checkout" exact>
+          <Checkout />
+        </Route>
+        <Route path='*'>
+          <Redirect to='/' />
+        </Route>
+      </Switch>
+    </Layout>
   );
 }
 
