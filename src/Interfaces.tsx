@@ -33,3 +33,9 @@ export interface burger {
   ingredientsAdded: ingredientType[];
   totalPrice: number;
 }
+
+export interface propsButton {
+  onClick: () => void,
+  type: string,
+  children: any
+}

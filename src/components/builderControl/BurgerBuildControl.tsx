@@ -16,7 +16,7 @@ const BurgerBuildControl = () => {
 
   return (
     <div className={classes.BuildControls}>
-      <OrderSummary show={showOrderBurguer}/>
+      <OrderSummary show={showOrderBurguer} onClose={toggleOrderNowHandler}/>
       <h2>Price: ${buger.totalPrice}</h2>
       {DummyIngredients.map((ingredient: ingredient, index) => (
         <IngridientControl key={index} ingredient={ingredient} />

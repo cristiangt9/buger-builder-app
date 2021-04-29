@@ -38,7 +38,7 @@ const OrderSummary = (props: any) => {
   }
 
   return (
-    <Modal show={props.show}>
+    <Modal show={props.show} onClose={props.onClose} >
       <h3>Your Order</h3>
       <p>A delicuios burger with the following ingredients:</p>
       <ul>{ingredientsSummary}</ul>
