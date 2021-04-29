@@ -84,7 +84,7 @@
   width: 80%;
   height: 8%;
   background: linear-gradient(#7f3608, #702e05);
-  margin: 2% auto;
+  margin: 0.5% auto;
   border-radius: 15px;
   position: relative;
 }
@@ -92,7 +92,7 @@
 .Cheese {
   width: 90%;
   height: 4.5%;
-  margin: 2% auto;
+  margin: 0.5% auto;
   background: linear-gradient(#f4d004, #d6bb22);
   border-radius: 20px;
   position: relative;
@@ -101,7 +101,7 @@
 .Salad {
   width: 85%;
   height: 7%;
-  margin: 2% auto;
+  margin: 0.5% auto;
   background: linear-gradient(#228c1d, #91ce50);
   border-radius: 20px;
   position: relative;
@@ -111,7 +111,7 @@
   width: 80%;
   height: 3%;
   background: linear-gradient(#bf3813, #c45e38);
-  margin: 2% auto;
+  margin: 0.5% auto;
   position: relative;
   border-radius: 5px;
 }
@@ -124,6 +124,7 @@
   position: absolute;
   top:8%;
   right: 0.5%;
+  font-size: 6px;
 }
 
 .Button:hover{
@@ -149,7 +150,6 @@
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
-  vertical-align: middle;
   left: -5%;
   z-index: 1;
 }
@@ -157,4 +157,20 @@
 /* Show the tooltip text when you mouse over the tooltip container */
 .Tooltip:hover .Tooltiptext {
   visibility: visible;
+}
+
+@media (min-width: 400px) and (min-height: 400px) {
+  .Button{
+      font-size: 8px;
+  }
+}
+@media (min-width: 500px) and (min-height: 401px) {
+  .Button{
+    font-size: 10px;
+  }
+}
+@media (min-width: 1000px) and (min-height: 700px) {
+  .Button{
+    font-size: 12px;
+  }
 }
